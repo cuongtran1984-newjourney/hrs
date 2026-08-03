@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.6</version>
+        <version>4.1.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -16,13 +16,13 @@
 
     <properties>
         <java.version>25</java.version>
-        <vaadin.version>25.1.2</vaadin.version>
-        <jooq-utilities.version>1.1.2</jooq-utilities.version>
+        <vaadin.version>25.2.3</vaadin.version>
+        <jooq-utilities.version>1.1.4</jooq-utilities.version>
 
-        <flyway-maven-plugin.version>12.0.2</flyway-maven-plugin.version>
+        <flyway-maven-plugin.version>13.0.0</flyway-maven-plugin.version>
         <groovy-maven-plugin.version>2.1.1</groovy-maven-plugin.version>
 
-        <playwright.version>1.58.0</playwright.version>
+        <playwright.version>1.61.0</playwright.version>
         <mopo.version>0.0.6</mopo.version>
         <archunit.version>1.4.1</archunit.version>
         <jacoco.version>0.8.14</jacoco.version>
@@ -82,6 +82,11 @@
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>browserless-test-junit6</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>browserless-test-spring</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
